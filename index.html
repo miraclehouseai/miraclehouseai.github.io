@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Miracle House AI - Innovative AI Solutions</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
       body {
         font-family: Arial, sans-serif;
         background-color: #121212;
@@ -17,7 +20,8 @@
         min-height: 100vh;
       }
       .container {
-        width: 80%;
+        width: 90%;
+        max-width: 1200px;
         margin: auto;
         overflow: hidden;
         padding: 20px;
@@ -30,6 +34,10 @@
       }
       header h1 {
         margin: 0;
+        font-size: 2.5em;
+      }
+      header p {
+        font-size: 1.2em;
       }
       .section {
         background: #1e1e1e;
@@ -39,6 +47,7 @@
       }
       .section h2 {
         margin-top: 0;
+        font-size: 1.8em;
       }
       .emoji {
         font-size: 1.5em;
@@ -50,6 +59,46 @@
         text-align: center;
         padding: 10px 0;
         font-size: 0.9em;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          width: 95%;
+          padding: 10px;
+        }
+        header h1 {
+          font-size: 2em;
+        }
+        header p {
+          font-size: 1em;
+        }
+        .section h2 {
+          font-size: 1.5em;
+        }
+        .emoji {
+          font-size: 1.2em;
+        }
+      }
+
+      @media (max-width: 480px) {
+        header h1 {
+          font-size: 1.8em;
+        }
+        .section {
+          padding: 15px;
+        }
+        .section h2 {
+          font-size: 1.3em;
+        }
+        .emoji {
+          font-size: 1em;
+        }
       }
     </style>
   </head>
